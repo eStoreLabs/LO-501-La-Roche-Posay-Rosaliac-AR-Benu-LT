@@ -68,6 +68,15 @@
       font-display: swap;
     }
 
+    * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box
+    }
+
+    p {
+      color: initial
+    }
+
     #la-roche.la-roche {
       font-family: Locator, "LocatorWeb", Tahoma, Geneva, Verdana, sans-serif;
       font-size: 18px;
@@ -197,6 +206,10 @@
       transition: background-size 300ms ease-in-out;
     }
 
+    #la-roche.la-roche .es-results p {
+      color: #fff;
+    }
+
     #la-roche.la-roche .es-results__title {
       text-transform: uppercase;
       font-size: clamp(16px, 28px + 0.8889vw, 40px);
@@ -287,7 +300,7 @@
       background-repeat: no-repeat;
       background-position: center;
       padding: 10px;
-      padding-top: 55px;
+      padding-top: 12%;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -335,6 +348,10 @@
 
     #la-roche.la-roche .es-use__content {
       padding: 24px;
+    }
+
+    #la-roche.la-roche .es-use__content p {
+      color: #fff;
     }
 
     #la-roche.la-roche .es-use__title {
@@ -558,7 +575,7 @@
 
       #la-roche.la-roche .es-use__content {
         max-width: 50%;
-        padding: 16px 112px;
+        padding: 16px 20px;
       }
 
     }
@@ -577,7 +594,7 @@
 
       #la-roche.la-roche .es-kv__brand {
         width: 200px;
-        left: 15%;
+        left: unset;
       }
 
       #la-roche.la-roche .es-kv__content {
@@ -655,13 +672,14 @@
       }
 
       #la-roche.la-roche .es-use__content {
-        padding: 30px 73px;
+        padding: 30px 20px 30px 15px;
+        max-width: 58%;
       }
 
       #la-roche.la-roche .es-cross {
         background-image: url(./assets/img/bg-es-cross.png);
         background-repeat: no-repeat;
-        background-size: 85%;
+        background-size: 100%;
         background-position: bottom center;
       }
 
@@ -681,7 +699,7 @@
       }
 
       #la-roche.la-roche .es-cross__single--2 .es-cross__content {
-        margin-left: 16px;
+        margin-left: 5px;
       }
 
       #la-roche.la-roche .es-cross__single img {
@@ -695,9 +713,10 @@
         transform: scale(1.05);
         transition: 0.4s ease-in-out;
       }
+
       #la-roche.la-roche .es-cross__link {
-      transition: none;
-    }
+        transition: none;
+      }
 
       #la-roche.la-roche .es-obligations__title {
         margin-top: 144px;
@@ -742,15 +761,20 @@
       }
 
       #la-roche.la-roche .es-use__content {
-        padding: 30px 112px;
+        padding: 30px 10px 30px 70px;
+      }
+
+      #la-roche.la-roche .es-cross {
+        background-size: 85%;
       }
 
       #la-roche.la-roche .es-cross__single {
         width: 48%;
       }
+
       #la-roche.la-roche .es-cross__link {
-      font-size: 18px;
-    }
+        font-size: 18px;
+      }
 
       #la-roche.la-roche .es-cross__single--2 {
         right: 52px;
@@ -916,7 +940,8 @@
         <ol>
           <li>Tepkite ant nuvalytos odos.</li>
           <li>Naudokite ryte ir vakare.</li>
-          <li>Kad veiksmingumas būtų optimalus, dieną naudokite su drėkinamuoju kremu<br /> „TOLERIANE ROSALIAC AR“ SPF 30.
+          <li>Kad veiksmingumas būtų optimalus, dieną naudokite su drėkinamuoju kremu<br /> „TOLERIANE ROSALIAC AR“ SPF
+            30.
           </li>
         </ol>
       </div>
@@ -931,13 +956,14 @@
         <div class="es-cross__content">
           <p class="es-cross__number">1</p>
           <p class="es-cross__name">
-            <strong>toleriane</strong> Švelni 
+            <strong>toleriane</strong> Švelni
             valomoji emulsija
           </p>
           <p class="es-cross__desc">
             mažina diskomforto pojūtį ir odos<br /> sausumą
           </p>
-          <a href="https://www.benu.lt/grozio-ir-odos-prieziura/veido-odos-prieziura/veido-valymo-priemones/la-roche-posay-veido-prausiklis-jautriai-odai-toleriane-400-ml" target="_blank" class="es-cross__link">Sužinokite daugiau</a>
+          <a href="https://www.benu.lt/grozio-ir-odos-prieziura/veido-odos-prieziura/veido-valymo-priemones/la-roche-posay-veido-prausiklis-jautriai-odai-toleriane-400-ml"
+            target="_blank" class="es-cross__link">Sužinokite daugiau</a>
         </div>
       </div>
 
@@ -948,7 +974,8 @@
             <strong>toleriane</strong> Rosaliac AR Concentrate
           </p>
           <p class="es-cross__desc">intensyvios priežiūros<br> koreguojamoji priemonė</p>
-          <a href="https://www.benu.lt/grozio-ir-odos-prieziura/veido-odos-prieziura/la-roche-posay-drekinamasis-kremas-toleriane-rosaliac-ar-concentrate-40-ml" target="_blank" class="es-cross__link">Sužinokite daugiau</a>
+          <a href="https://www.benu.lt/grozio-ir-odos-prieziura/veido-odos-prieziura/la-roche-posay-drekinamasis-kremas-toleriane-rosaliac-ar-concentrate-40-ml"
+            target="_blank" class="es-cross__link">Sužinokite daugiau</a>
         </div>
         <img src="./assets/img/es-cross-2.png" alt="" />
       </div>
@@ -961,7 +988,8 @@
             <strong>toleriane</strong> rosaliac<br /> AR SPF 30
           </p>
           <p class="es-cross__desc">raminamoji priemonė,<br> suteikianti apsaugą <br>nuo UV spindulių</p>
-          <a href="https://www.benu.lt/grozio-ir-odos-prieziura/veido-odos-prieziura/la-roche-posay-drekinamasis-kremas-toleriane-toleriane-rosaliac-uv-spf30-50-ml" target="_blank" class="es-cross__link">Sužinokite daugiau</a>
+          <a href="https://www.benu.lt/grozio-ir-odos-prieziura/veido-odos-prieziura/la-roche-posay-drekinamasis-kremas-toleriane-toleriane-rosaliac-uv-spf30-50-ml"
+            target="_blank" class="es-cross__link">Sužinokite daugiau</a>
         </div>
       </div>
     </div>
